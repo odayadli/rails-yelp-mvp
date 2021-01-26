@@ -1,0 +1,11 @@
+<%= @restaurant.name %>
+<%= @restaurant.address %>
+<%= @restaurant.phone_number %>
+<%= @restaurant.category %>
+
+<%= link_to 'Delete', restaurant_path(@restaurant), method: :delete %>
+
+<%= link_to 'Edit', edit_restaurant_path(@restaurant)%>
+<%= link_to 'add review', new_restaurant_review_path(@restaurant)%>
+
+<%= link_to "home", restaurant_path %>
